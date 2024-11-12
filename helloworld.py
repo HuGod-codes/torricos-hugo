@@ -1,10 +1,10 @@
-a = 13
+import numpy as np
 
-print(a)
+a = np.array([[4, 1], [3, 2]])
+b = np.array([[9, 4], [4, 3]])
 
-def google():
-    enPassant = "pawn takes in passing"
-    return enPassant
+c = np.dot(a, b)
 
-
-print(google())
+print(c)
+print(np.linalg.inv(c))
+print(c.T)
